@@ -1,17 +1,15 @@
 """
-cerebrus_core.py
+cerebrus_core.py  ← Ficheiro principal (na raiz do repo)
 Core_System_Cerebrus - Main Executive Core
-
-Junta todos os módulos num sistema coeso.
 """
 
-from ethical_memory_store import EthicalMemoryStore
-from resource_detector import ResourceDetector
-from thermodynamic_orchestrator import ThermodynamicOrchestrator
-from proposal_engine import ProposalEngine
-from conflict_grammar import ConflictGrammar
-from vital_service_matcher import VitalServiceMatcher
-from human_interface import HumanInterface
+from Modules.ethical_memory_store import EthicalMemoryStore
+from Modules.resource_detector import ResourceDetector
+from Modules.thermodynamic_orchestrator import ThermodynamicOrchestrator
+from Modules.proposal_engine import ProposalEngine
+from Modules.conflict_grammar import ConflictGrammar
+from Modules.vital_service_matcher import VitalServiceMatcher
+from Modules.human_interface import HumanInterface
 
 
 class CerebrusCore:
@@ -27,31 +25,33 @@ class CerebrusCore:
         self.memory.log({"type": "system_start", "message": "Core_System_Cerebrus initialized successfully"})
 
     def run_cycle(self):
-        """Um ciclo completo de deteção → proposta → interação."""
-        print("\n=== Core_System_Cerebrus Cycle ===")
+        """Um ciclo completo: deteção → orquestração → propostas → resposta humana."""
+        print("\n=== Core_System_Cerebrus Cycle Started ===\n")
 
-        # 1. Detetar
-        self.detector.update_state({"axiom07_metrics": {"daily_calories": 1400}})
-        needs = self.detector.detect_needs()
+        # 1. Detetar necessidades
+        self.detector.update_state({
+            "axiom07_metrics": {"daily_calories": 1450, "water_liters": 12}
+        })
 
-        # 2. Orquestrar + Gerar propostas
-        resources = [{"id": "solar_001", "joules": 10000}]
-        recipients = [{"id": "p001", "axiom07_metrics": {"daily_calories": 1400}}]
+        resources = [{"id": "solar_batch_001", "joules": 12000, "type": "energy"}]
+        recipients = [
+            {"id": "person_001", "axiom07_metrics": {"daily_calories": 1450, "water_liters": 12}}
+        ]
 
+        # 2. Gerar propostas
         proposals = self.proposal_engine.generate_proposals(resources, recipients)
 
         # 3. Mostrar ao humano
         self.interface.show_proposals(proposals)
 
-        # 4. Obter resposta (simulada por agora)
+        # 4. Receber respostas (interação simples)
         for prop in proposals:
             response = self.interface.get_user_response(prop)
-            self.memory.log({"type": "human_response", "response": response})
+            self.memory.log({"type": "human_response", "proposal": prop, "response": response})
 
-        print("Cycle completed. All logged in Ethical Memory Store.")
+        print("\n=== Cycle completed. All actions logged in Ethical Memory Store. ===\n")
 
 
-# ====================== RUN ======================
 if __name__ == "__main__":
     core = CerebrusCore()
     core.run_cycle()
