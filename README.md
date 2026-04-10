@@ -15,3 +15,43 @@ It works as the "brain" of the SEM framework:
 **Core principles**: Offline-first, fully auditable, anti-capture, human-centric, and 100% voluntary.
 
 ### Project Structure
+Core_System_Cerebrus/
+├── cerebrus_core.py
+├── requirements.txt
+├── README.md
+├── data/                     # Auto-created (ethical_memory.jsonl)
+└── Modules/
+├── ethical_memory_store.py
+├── resource_detector.py
+├── thermodynamic_orchestrator.py
+├── proposal_engine.py
+├── conflict_grammar.py
+├── vital_service_matcher.py
+└── human_interface.py
+
+
+### How to Run
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/F-i-Red/Core_System_Cerebrus.git
+cd Core_System_Cerebrus
+
+# 2. Install dependencies (optional for basic use)
+pip install -r requirements.txt
+
+# 3. Run the core system
+python cerebrus_core.py
+```
+# Current Status
+
+Fully functional basic cycle (detection → orchestration → proposals → human response → logging)
+All modules are modular and extensible
+Ready for simulation and small real-world pilots
+
+# Future Improvements
+
+Web dashboard (Streamlit/Gradio)
+Integration with joule_sim from Shared-Ethical-Memory
+Sensor/IoT data input
+More sophisticated Axiom 07 metrics
