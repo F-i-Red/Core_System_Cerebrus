@@ -1,0 +1,17 @@
+# Core_System_Cerebrus
+
+**Thermodynamic executive engine of the Shared Ethical Memory (SEM 2063)**
+
+Core_System_Cerebrus is the central orchestrator responsible for managing resource flows, logistics, human needs, and voluntary contributions in a transparent, post-scarcity civilization.
+
+It works as the "brain" of the SEM framework:
+- Detects real needs and surpluses
+- Optimizes distribution based on joules and **Axiom 07** (measurable physical well-being)
+- Generates **voluntary proposals** only — never commands
+- Includes the **Serviço Cívico Vital** module for larger or longer-term voluntary contributions
+- Resolves conflicts through Conflict Grammar
+- Logs everything immutably in the Ethical Memory Store
+
+**Core principles**: Offline-first, fully auditable, anti-capture, human-centric, and 100% voluntary.
+
+### Project Structure
