@@ -43,13 +43,13 @@ pip install -r requirements.txt
 # 3. Run the core system
 python cerebrus_core.py
 ```
-# Current Status
+### Current Status
 
 Fully functional basic cycle (detection → orchestration → proposals → human response → logging)
 All modules are modular and extensible
 Ready for simulation and small real-world pilots
 
-# Future Improvements
+### Future Improvements
 
 Web dashboard (Streamlit/Gradio)
 Integration with joule_sim from Shared-Ethical-Memory
