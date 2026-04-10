@@ -53,8 +53,9 @@ Ready for simulation and small real-world pilots
 
 ## Web dashboard
 
-Persistent state (Modules/state_manager.py) — The world state now lives in data/world_state.json. Every time you run cerebrus_core.py, it loads from where you left off. Stocks replenish each cycle (solar energy generated, water collected, food produced) and deplete (baseline consumption). If you accept more proposals, the Axiom 07 metrics improve — calories go up, water improves, temperature rises. Run it 10 times accepting everything and you'll see the community recover. Run it ignoring everything and it degrades.
-Dashboard (dashboard.py) — Five pages: World State overview, Axiom 07 metrics with progress bars, Stocks with per-cycle flow rates, the full Memory Log with hash verification, and a Simulate Cycle page where you can advance state directly from the browser without touching the terminal.
+**Persistent state (Modules/state_manager.py) —** The world state now lives in data/world_state.json. Every time you run cerebrus_core.py, it loads from where you left off. Stocks replenish each cycle (solar energy generated, water collected, food produced) and deplete (baseline consumption). If you accept more proposals, the Axiom 07 metrics improve — calories go up, water improves, temperature rises. Run it 10 times accepting everything and you'll see the community recover. Run it ignoring everything and it degrades.
+
+**Dashboard (dashboard.py) —** Five pages: World State overview, Axiom 07 metrics with progress bars, Stocks with per-cycle flow rates, the full Memory Log with hash verification, and a Simulate Cycle page where you can advance state directly from the browser without touching the terminal.
 
 
 To launch the dashboard, install Streamlit once and run:
