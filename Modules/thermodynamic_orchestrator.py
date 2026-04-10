@@ -12,9 +12,8 @@ import random
 from datetime import datetime
 from typing import Dict, List, Any
 
-# Assumindo que estes módulos existem no projeto
-from ethical_memory_store import EthicalMemoryStore
-from conflict_grammar import ConflictGrammar
+from Modules.ethical_memory_store import EthicalMemoryStore
+from Modules.conflict_grammar import ConflictGrammar
 
 
 class ThermodynamicOrchestrator:
