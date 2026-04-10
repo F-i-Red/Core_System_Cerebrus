@@ -8,7 +8,7 @@ Nunca força — apenas sugere de forma clara, útil e atraente.
 
 from datetime import datetime
 from typing import Dict, List, Any
-from thermodynamic_orchestrator import ThermodynamicOrchestrator
+from Modules.thermodynamic_orchestrator import ThermodynamicOrchestrator
 
 
 class ProposalEngine:
