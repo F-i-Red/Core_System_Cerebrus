@@ -58,8 +58,10 @@ Dashboard (dashboard.py) — Five pages: World State overview, Axiom 07 metrics 
 
 
 To launch the dashboard, install Streamlit once and run:
+```bash
 pip install streamlit
 streamlit run dashboard.py
+```
 It opens in your browser automatically at localhost:8501.
 
 Web dashboard (Streamlit/Gradio)
