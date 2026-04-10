@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "cycle": 2,
+    "last_updated": "2026-04-10T02:30:46.404388",
+    "version": "1.0"
+  },
+  "stocks": {
+    "food_kg": 17.0,
+    "water_liters": 70.0,
+    "energy_joules": 54000.0,
+    "recycling_kg": 7.0
+  },
+  "axiom07_metrics": {
+    "daily_calories": 1720.0,
+    "water_liters": 2.6,
+    "temp_celsius": 17.2,
+    "sleep_hours": 6.9
+  },
+  "pending_tasks": [
+    {
+      "name": "Greenhouse maintenance",
+      "severity": "high"
+    },
+    {
+      "name": "Recycling sorting",
+      "severity": "medium"
+    }
+  ],
+  "volunteer_gaps": [
+    {
+      "task_id": "t001",
+      "name": "Harvest — Zone 7",
+      "slots_needed": 3,
+      "location": "Zone 7",
+      "duration": "2 hours",
+      "urgent": true
+    },
+    {
+      "task_id": "t002",
+      "name": "Water pipe check — Zone 3",
+      "slots_needed": 1,
+      "location": "Zone 3",
+      "duration": "1 hour",
+      "urgent": false
+    }
+  ],
+  "resources_available": [
+    {
+      "id": "solar_batch",
+      "joules": 13400.0,
+      "type": "energy"
+    }
+  ],
+  "replenishment_rates": {
+    "food_kg": 3.5,
+    "water_liters": 25.0,
+    "energy_joules": 8000.0,
+    "recycling_kg": 1.0
+  },
+  "consumption_rates": {
+    "food_kg": 5.0,
+    "water_liters": 30.0,
+    "energy_joules": 6000.0,
+    "recycling_kg": 0.0
+  }
+}
