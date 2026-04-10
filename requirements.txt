@@ -1,0 +1,17 @@
+# Core_System_Cerebrus - Dependencies (minimal and offline-first)
+
+# Core Python libraries (já vêm com Python 3.8+)
+# Nenhum pacote externo pesado por enquanto
+
+# Para interface web simples no futuro (opcional)
+streamlit==1.32.0
+gradio==4.44.0
+
+# Para otimização matemática (útil no ThermodynamicOrchestrator)
+pulp==2.8.0
+
+# Para persistência e JSON handling (já incluído no Python)
+# json, datetime, os, typing → built-in
+
+# Se quiseres adicionar logging mais avançado no futuro:
+# structlog
